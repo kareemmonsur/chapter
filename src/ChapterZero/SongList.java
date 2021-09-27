@@ -9,24 +9,37 @@ public class SongList {
     private double duration;
     private ArrayList<Music> music = new ArrayList<Music>();
 
-    public SongList() {}
+
+    public SongList() {
+    }
 
     public boolean addToSongList(String title, double duration) {
-            music.add(new Music(title, duration));
-            System.out.println(title + "successfully added");
-            return true;
-        }
-
-    public boolean deleteFromSongList(String title, double duration) {
-        music.remove(new Music(title, duration));
-        System.out.println(title + "successfully deleted");
+        music.add(new Music(title, duration));
+        System.out.println(title + "successfully added");
         return true;
     }
 
-    public boolean addToPlayList(int trackNumber, String title, LinkedList<Music> playlist){
-        int index = trackNumber -1;
+//    public boolean deleteFromSongList(String title, double duration) {
+//        music.remove(new Music(title, duration));
+//        System.out.println(title + "successfully deleted");
+//        return true;
+//    }
+
+//    public boolean createPlaylist(String playlistName) {
+//        System.out.println(playlist + "successfully created");
+//        return true;
+
+    public boolean addToPlayList(int trackNumber, String title, LinkedList<Music> playlist) {
+        int index = trackNumber - 1;
         if (index > 0 && index <= this.music.size())
-            PlayList.add(this.music.get(index));
+            playlist.add(this.music.get(index));
+            return true;
+    }
+
+    public boolean deleteFromPlayList(int trackNumber, String title, LinkedList<Music> playlist) {
+        int index = trackNumber - 1;
+        if (index > 0 && index <= this.music.size())
+            playlist.remove(this.music.get(index));
         return true;
     }
 
