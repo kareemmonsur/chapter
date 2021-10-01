@@ -7,9 +7,13 @@ public class ThreePointThreeOne {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter score: ");
         int score = scanner.nextInt();
-        System.out.println("Enter salary: ");
+        System.out.print("Enter salary: ");
         double salary = scanner.nextDouble();
-        if (score > 90)
-        System.out.println("Your new salary: " + (salary = (salary * 0.3) + salary));
+        if (score > 90) {
+            System.out.println("Your new salary: " + (salary = (salary * 0.3) + salary));
+        }
+        else
+        {System.out.println("Your new salary: " + (salary = (salary * 0.1) + salary));
+        }
     }
 }
