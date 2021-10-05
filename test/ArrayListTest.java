@@ -1,8 +1,13 @@
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ArrayListTest {
+    List myArrayList;
+    @BeforeEach
+    public void startEachTestWith(){
+        myArrayList = new ArrayList();
+    }
 
     @Test
     public void arrayListCanBeCreatedTest(){
