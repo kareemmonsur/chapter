@@ -10,7 +10,7 @@ public class ChineseZodiac {
 
         switch (year % 12) {
             case 0: System.out.println("Your zodiac sign is Monkey");
-            break;
+                break;
             case 1: System.out.println("Your zodiac sign is Rooster");
                 break;
             case 2: System.out.println("Your zodiac sign is Dog");
