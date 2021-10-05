@@ -9,29 +9,29 @@ public class ChineseZodiac {
         int year = scanner.nextInt();
 
         switch (year % 12) {
-            case 0: System.out.println("monkey");
+            case 0: System.out.println("Your zodiac sign is Monkey");
             break;
-            case 1: System.out.println("rooster");
+            case 1: System.out.println("Your zodiac sign is Rooster");
                 break;
-            case 2: System.out.println("dog");
+            case 2: System.out.println("Your zodiac sign is Dog");
                 break;
-            case 3: System.out.println("pig");
+            case 3: System.out.println("Your zodiac sign is Pig");
                 break;
-            case 4: System.out.println("rat");
+            case 4: System.out.println("Your zodiac sign is Rat");
                 break;
-            case 5: System.out.println("ox");
+            case 5: System.out.println("Your zodiac sign is Ox");
                 break;
-            case 6: System.out.println("tiger");
+            case 6: System.out.println("Your zodiac sign is Tiger");
                 break;
-            case 7: System.out.println("rabbit");
+            case 7: System.out.println("Your zodiac sign is Rabbit");
                 break;
-            case 8: System.out.println("dragon");
+            case 8: System.out.println("Your zodiac sign is Dragon");
                 break;
-            case 9: System.out.println("snake");
+            case 9: System.out.println("Your zodiac sign is Snake");
                 break;
-            case 10: System.out.println("horse");
+            case 10: System.out.println("Your zodiac sign is Horse");
                 break;
-            case 11: System.out.println("sheep");
+            case 11: System.out.println("Your zodiac sign is Sheep");
                 break;
 
         }
