@@ -5,7 +5,7 @@ public class ArrayList implements List {
     int element;
     int[] elements;
 
-    public ArrayListT(){
+    public ArrayList(){
         elements = new int[6];
     }
 
@@ -29,6 +29,7 @@ public class ArrayList implements List {
     public void remove(int element) {
         if(isEmpty()) throw new illegalArgumentException("ArrayList is empty");
         size--;
+
     }
 
     @Override
@@ -42,7 +43,12 @@ public class ArrayList implements List {
     }
 
     @Override
-    public void get(int index) {
+    public void remove(int element){
+        if(isEmpty() )
+    }
+
+    @Override
+    public int get(int index) {
         return elements[index];
     }
 

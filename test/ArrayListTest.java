@@ -42,6 +42,13 @@ public class ArrayListTest {
 
 
 
+    @Test
+    public void addXYZ_RemoveY_ZShouldBeInThePositionOfY(){
+
+    }
+
+
+
 
 
 

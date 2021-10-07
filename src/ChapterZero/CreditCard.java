@@ -41,7 +41,7 @@ public class CreditCard {
         if(sum % 10 == 0){
             System.out.println("card is valid");
         }
-        else{
+        else {
             System.out.println("card is invalid");
         }
     }
