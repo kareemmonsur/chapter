@@ -1,7 +1,7 @@
 package ChapterZero;
+
 import java.util.Objects;
 
-import static ticTakToe.Board.array;
 import static ticTakToe.Board.getBoard;
 import static ticTakToe.Players.*;
 import static ticTakToe.TicTacToeType.EMPTY;
