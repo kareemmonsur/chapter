@@ -6,7 +6,7 @@ public class ArrayList implements List {
     int[] elements;
 
     public ArrayList(){
-        elements = new int[6];
+        elements = new int[3];
     }
 
     @Override
@@ -16,7 +16,13 @@ public class ArrayList implements List {
 
     @Override
     public void add(int element) {
-        boolean isFull = getCapacity() == elements.length;
+        boolean isFull = getCapacity() == size;
+        if (isFull){
+            int[] newArray = new int[elements.length * 2];
+            for (int i = 0; i < elements.length; i++){
+                newArray[i] = elements[i];
+            }
+        }
         elements[size++] = element;
         size++;
     }
@@ -28,8 +34,19 @@ public class ArrayList implements List {
     @Override
     public void remove(int element) {
         if(isEmpty()) throw new illegalArgumentException("ArrayList is empty");
+        int position = getIndexOf(element);
+        for(int i = position; i>size; i++){
+            try{
+                elements[i] = elements;
+            }
+        }
+
         size--;
 
+    }
+
+    private int getIndexOf(int element) {
+        return 0;
     }
 
     @Override
