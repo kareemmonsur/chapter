@@ -12,7 +12,7 @@ public class PasswordGenerator {
         String lastName = scanner.nextLine();
 
         int passwordNumber = 100 + (int)(Math.random() * 900);
-        String password = (firstName.substring(0,1) + lastName.substring(0,1) + passwordNumber);
+        String password = (firstName.substring(0,2).toLowerCase() + lastName.substring(0,2).toLowerCase() + passwordNumber);
         System.out.println("Your password is: " + password);
     }
 }
