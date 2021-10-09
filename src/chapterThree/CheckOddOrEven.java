@@ -11,13 +11,13 @@ public class CheckOddOrEven {
         int secondNumber = scanner.nextInt();
 
         if(firstNumber % 2 == 0 && secondNumber % 2 == 0){
-            System.out.println(firstNumber + "and" + secondNumber + "are" + "even");
+            System.out.println(firstNumber + " and " + secondNumber + " are " + "even numbers");
         }
         else if (firstNumber % 2 == 1 && secondNumber % 2 == 1){
-            System.out.println(firstNumber + "and" + secondNumber + "are" + "odd");
+            System.out.println(firstNumber + " and " + secondNumber + " are " + "odd numbers");
         }
         else{
-            System.out.println("Nothing special");
+            System.out.println("Nothing special!");
         }
     }
 }
