@@ -21,8 +21,14 @@ public class CreditLimitCalculator {
     private int credits;
     private int accountNumber;
     private int creditLimit;
+    private int newBalance;
 
     public CreditLimitCalculator() {
+    }
+
+    public void calculateNewBalance(int newBalance) {
+        newBalance = (getInitialBalance() + getCharges() - getCredits());
+        this.newBalance = newBalance;
     }
 
     public int getInitialBalance() {
