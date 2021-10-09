@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class PrimeNumber{
+class PrimeNumber {
 
     public static void main(String[] args){
 
@@ -8,9 +8,9 @@ class PrimeNumber{
 
         int number, count, primeNumber;
 
-        number = input.nextInt();
+       int number = input.nextInt();
 
-        if (count=1; count < number; count++){
+        if (count= 1; count < number; count++){
             System.out.println("Enter a number: ");
 
             if (number % count == 0)
