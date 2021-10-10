@@ -24,10 +24,18 @@ public class CreditLimitCalculator {
 
 
     public CreditLimitCalculator(int initialBalance, int charges, int credits, int creditLimit) {
-        this.initialBalance = initialBalance;
-        this.charges = charges;
-        this.credits = credits;
-        this.creditLimit = creditLimit;
+        if (initialBalance > 0) {
+            this.initialBalance = initialBalance;
+        }
+        if (charges > 0) {
+            this.charges = charges;
+        }
+        if (credits > 0) {
+            this.credits = credits;
+        }
+        if (creditLimit > 0) {
+            this.creditLimit = creditLimit;
+        }
     }
 
     public int getInitialBalance() {
