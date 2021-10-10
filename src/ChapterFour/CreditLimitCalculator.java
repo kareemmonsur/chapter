@@ -21,38 +21,25 @@ public class CreditLimitCalculator {
     private int credits;
     private int accountNumber;
     private int creditLimit;
-    private int newBalance;
 
-    public CreditLimitCalculator() {
-    }
 
-    public void calculateNewBalance(int newBalance) {
-        newBalance = (getInitialBalance() + getCharges() - getCredits());
-        this.newBalance = newBalance;
+    public CreditLimitCalculator(int initialBalance, int charges, int credits, int creditLimit) {
+        this.initialBalance = initialBalance;
+        this.charges = charges;
+        this.credits = credits;
+        this.creditLimit = creditLimit;
     }
 
     public int getInitialBalance() {
         return initialBalance;
     }
 
-    public void setInitialBalance(int initialBalance) {
-        this.initialBalance = initialBalance;
-    }
-
     public int getCharges() {
         return charges;
     }
 
-    public void setCharges(int charges) {
-        this.charges = charges;
-    }
-
     public int getCredits() {
         return credits;
-    }
-
-    public void setCredits(int credits) {
-        this.credits = credits;
     }
 
     public int getAccountNumber() {
