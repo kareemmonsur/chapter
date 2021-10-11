@@ -8,7 +8,7 @@ public class SalesCommissionCalculator {
         int grossSales = 0;
         for (int item = 1; item<= 3; item++){
         System.out.println("Input price of item: ");
-        int itemValue = scanner.nextInt();
+        double itemValue = scanner.nextInt();
             grossSales += itemValue;
         }
         double salesmanEarningPerWeek = (200 + (0.09 * grossSales));
