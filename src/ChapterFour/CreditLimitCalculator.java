@@ -1,19 +1,4 @@
 package ChapterFour;
-//(Credit Limit Calculator) Develop a Java application that determines whether any of several
-//        department-store customers has exceeded the credit limit on a charge account. For each customer,
-//        the following facts are available:
-//        a) account number
-//        b) balance at the beginning of the month = intial balance
-//        c) total of all items charged by the customer this month = totalItem
-//        d) total of all credits applied to the customer’s account this month = credit
-//        e) allowed credit limit. = creditLimit
-
-//beginning balance = intial balance, charges = amount to pay at the moment, credit = amount owed from prev balance + charges
-
-//        The program should input all these facts as integers, calculate the new balance (= beginning balance
-//        + charges – credits), display the new balance and determine whether the new balance exceeds the
-//        customer’s credit limit. For those customers whose credit limit is exceeded, the program should dis-
-//        play the message "Credit limit exceeded" .
 
 public class CreditLimitCalculator {
     private int initialBalance;
