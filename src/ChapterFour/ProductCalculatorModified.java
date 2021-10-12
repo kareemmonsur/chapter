@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class ProductCalculatorModified {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter count: ");
+        System.out.println("How many numbers do you want to multiply: ");
+        int count = scanner.nextInt();
         int product = 1;
-        int count;
         for (int number = 1; number <= count; number++){
             System.out.println("Enter integer: ");
             int integer = scanner.nextInt();
