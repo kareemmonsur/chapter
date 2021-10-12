@@ -6,13 +6,15 @@ import java.util.Scanner;
 public class SumCalculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+//        System.out.println("Enter number: ");
+//        int number = scanner.nextInt();
         int sum = 0;
         int number;
         for (number = 1; number <= 2; number++) {
-            sum += number;
-            System.out.println("Enter number: ");
+            System.out.print("Enter number: ");
             number = scanner.nextInt();
+            sum += number;
         }
-        System.out.println(sum);
+        System.out.printf("The total sum is: %d",sum);
     }
 }
