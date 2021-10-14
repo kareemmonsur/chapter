@@ -7,8 +7,7 @@ public class SumOfIntegerCalculator {
 
 
     public SumOfIntegerCalculator(int firstNumber, int secondNumber) {
-        this.firstNumber = firstNumber;
-        this.secondNumber = secondNumber;
+        sum = firstNumber + secondNumber;
     }
 
     public int getFirstNumber() {
