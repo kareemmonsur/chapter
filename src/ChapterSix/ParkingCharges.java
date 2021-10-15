@@ -9,28 +9,19 @@ package ChapterSix;
 //        termine the charge for each customer.
 
 public class ParkingCharges {
-    //private double parkingFee;
+    private double parkCharges;
     private int parkTime;
-   // private int extraTime;
 
-    public ParkingCharges(int parkTime) {
-      //  this.parkingFee = parkingFee;
-        this.parkTime = parkTime;
-      //  this.extraTime = extraTime;
+    public ParkingCharges() {
     }
 
     public void calculateParkingCharges() {
         double parkingCharges = 2.00 * parkTime;
 
     }
-
-//    public double getParkingFee() {
-//        return parkingFee;
-//    }
-//
-//    public void setParkingFee(double parkingFee) {
-//        this.parkingFee = parkingFee;
-//    }
+    public double parkCharges(){
+        return parkCharges;
+    }
 
     public int getParkTime() {
         return parkTime;
@@ -40,11 +31,4 @@ public class ParkingCharges {
         this.parkTime = parkTime;
     }
 
-//    public int getExtraTime() {
-//        return extraTime;
-//    }
-//
-//    public void setExtraTime(int extraTime) {
-//        this.extraTime = extraTime;
-//    }
 }
