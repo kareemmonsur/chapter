@@ -5,8 +5,10 @@ public class SumOfIntegerCalculator {
     private int secondNumber;
     private int sum;
 
+    public SumOfIntegerCalculator() {
+    }
 
-    public SumOfIntegerCalculator(int firstNumber, int secondNumber) {
+    public void SumOfInteger(int firstNumber, int secondNumber) {
         sum = firstNumber + secondNumber;
     }
 
