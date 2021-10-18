@@ -1,5 +1,6 @@
 package ChapterSeven;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class NumberAnalyser {
@@ -11,11 +12,11 @@ public class NumberAnalyser {
         double [] items = new double[itemNumber];
 
         System.out.println("Enter numbers: ");
-        for(int i= 0; i<= items.length; i++){
+        for(int i= 0; i<items.length; i++){
             items[i] = input.nextDouble();
-           // System.out.println(Arrays.toString(items));
+           //System.out.println(Arrays.toString(items));
         }
-
+       System.out.println(Arrays.toString(items));
     }
 
 }
