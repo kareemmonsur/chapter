@@ -13,9 +13,11 @@ public class SumArray {
         System.out.println("Enter shoe sizes: ");
         int i;
         int total = 0;
-        for(i =0; i < shoeSizes.length; i++){
-
+        for(i = 0; i < shoeSizes.length; i++){
+            total=+ shoeSizes[i];
 
         }
+        System.out.println(total);
+        System.out.println(total/shoeNumber);
     }
 }
