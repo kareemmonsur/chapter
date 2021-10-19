@@ -17,7 +17,7 @@ public class SumArray {
            shoeSizes[i] = input.nextInt();
             total+= shoeSizes[i];
         }
-        System.out.println(total);
-        System.out.println(total/shoeNumber);
+       // System.out.println(total);
+        System.out.println("The average shoe size is " + total/shoeNumber);
     }
 }
