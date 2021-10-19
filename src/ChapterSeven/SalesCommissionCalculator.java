@@ -14,10 +14,10 @@ public class SalesCommissionCalculator {
         System.out.println("Enter gross pay of workers :");
         int i = 0;
         for (i = 0; i< grossPay.length; i++){
-            double commission = 200 + (input.nextInt() * 0.09);
-            grossPay[i] = commission ;
+            double salesCommission = 200 + (input.nextInt() * 0.09);
+            grossPay[i] = salesCommission;
         }
-        int counter =1;
+        int counter = 1;
         for(Double pay:grossPay){
 
             System.out.print("worker " + counter + " ");
