@@ -8,13 +8,22 @@ public class SalesCommissionCalculator {
         System.out.println("Enter number of workers: ");
         int numberOfWorkers = input.nextInt();
 
-        int [] grossPay = new int[numberOfWorkers];
+        double [] grossPay = new double[numberOfWorkers];
 
 
         System.out.println("Enter gross pay of workers :");
         int i = 0;
         for (i = 0; i< grossPay.length; i++){
-            grossPay[i] = input.nextInt();
+            double commission = 200 + (input.nextInt() * 0.09);
+            grossPay[i] = commission ;
+        }
+        int counter =1;
+        for(Double pay:grossPay){
+
+            System.out.print("worker " + counter + " ");
+            System.out.print(pay);
+            counter++;
+            System.out.println();
         }
 
     }
