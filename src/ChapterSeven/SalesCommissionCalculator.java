@@ -17,6 +17,18 @@ public class SalesCommissionCalculator {
             double salesCommission = 200 + (input.nextInt() * 0.09);
             grossPay[i] = salesCommission;
         }
+        if(salesCommission >= 200 || salesCommission < 300){
+            counterA = counterA + 1;
+        }
+        else if(salesCommission >= 300 || salesCommission < 400){
+            counterB = counterB + 1;
+        }
+        if(salesCommission >= 400 || salesCommission < 500){
+            counterC = counterC + 1;
+        }
+        if(salesCommission >= 500 || salesCommission < 600){
+            counterD = counterD + 1;
+        }
         int counter = 1;
         for(Double pay:grossPay){
 
