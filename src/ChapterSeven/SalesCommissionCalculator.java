@@ -20,7 +20,7 @@ public class SalesCommissionCalculator {
         int counter = 1;
         for(Double pay:grossPay){
 
-            System.out.print("worker " + counter + " ");
+            System.out.print("Worker " + counter + " ");
             System.out.print(pay);
             counter++;
             System.out.println();
