@@ -2,7 +2,7 @@ package chapterThree;
 
 public class LibraryCard {
     private String owner;
-    private int borrowCount = 2;
+    private int borrowCount = 0;
 
     public LibraryCard() {
     }

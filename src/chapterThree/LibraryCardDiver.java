@@ -1,6 +1,6 @@
 package chapterThree;
 
-public class Student {
+public class LibraryCardDiver {
     public static void main(String[] args) {
         LibraryCard student1 = new LibraryCard();
         student1.checkOut(2);
