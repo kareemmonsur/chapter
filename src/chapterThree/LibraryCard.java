@@ -2,7 +2,7 @@ package chapterThree;
 
 public class LibraryCard {
     private String owner;
-    private int borrowCount = 0;
+    private int borrowCount = 2;
 
     public LibraryCard() {
     }
@@ -25,9 +25,6 @@ public class LibraryCard {
 
     @Override
     public String toString() {
-        return "LibraryCard{" +
-                "owner='" + owner + '\'' +
-                ", borrowCount=" + borrowCount +
-                '}';
+        return "owner name: " + owner + "\n" + "Borrow count: " + borrowCount;
     }
 }
