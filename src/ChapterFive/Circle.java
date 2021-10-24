@@ -3,12 +3,12 @@ package ChapterFive;
 public class Circle {
     private static final int INVALID_DIMENSION = -1;
     private double radius;
+    private boolean isRadiusValid;
 
-    public Circle(double radius) {
-        this.radius = radius;
+    public Circle() {
     }
 
-    public double getArea(boolean isRadiusValid) {
+    public double getArea() {
         double result = INVALID_DIMENSION;
         if (isRadiusValid){
             result = Math.PI * radius * radius;
@@ -17,14 +17,14 @@ public class Circle {
         return result;
     }
 
-    public double getCircumference(boolean isRadiusValid) {
+    public double getCircumference() {
         double result = INVALID_DIMENSION;
         if (isRadiusValid){
             result = 2.00 * Math.PI * radius;
         }
         return result;
     }
-    public double getDiameter(boolean isRadiusValid) {
+    public double getDiameter() {
         double result = INVALID_DIMENSION;
         if (isRadiusValid){
             result = 2.00 * radius;
@@ -42,5 +42,9 @@ public class Circle {
         }
         else{radius = INVALID_DIMENSION;
         }
+    }
+
+    public boolean isRadiusValid(){
+        return radius != INVALID_DIMENSION;
     }
 }
