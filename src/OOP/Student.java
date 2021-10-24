@@ -4,7 +4,7 @@ public class Student {
     private String name;
     private String department;
 
-    public Student(String name) {
+    public Student() {
 
     }
 

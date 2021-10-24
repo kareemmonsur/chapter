@@ -15,8 +15,8 @@ public class LibraryCard {
             return borrowCount;
         }
 
-        public Student getOwner() {
-            return owner;
+        public String getOwner() {
+            return owner.getName();
         }
 
         public void setOwner(Student owner) {
