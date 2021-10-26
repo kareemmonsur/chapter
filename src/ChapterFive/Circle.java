@@ -17,7 +17,6 @@ public class Circle {
         return result;
     }
 
-
     public double getCircumference() {
         double result = INVALID_DIMENSION;
         if (isRadiusValid){
@@ -25,6 +24,7 @@ public class Circle {
         }
         return result;
     }
+
     public double getDiameter() {
         double result = INVALID_DIMENSION;
         if (isRadiusValid){
