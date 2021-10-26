@@ -11,7 +11,7 @@ public class Librarian {
         card.checkOut(3);
 
         System.out.println("Library card info: ");
-        System.out.println(card.toString());
+        System.out.println(card);
 
     }
 }
