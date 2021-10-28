@@ -10,8 +10,8 @@ public class CircleTest {
 
         Circle circle = new Circle();
         circle.setRadius(radius);
-//        circle.setArea();
-//        circle.setCircumference();
+        //circle.setArea();
+        //circle.setCircumference();
         System.out.println("Radius: " + circle.getRadius());
         System.out.println("Area: " + circle.getArea());
         System.out.println("Circumference: " + circle.getCircumference());
