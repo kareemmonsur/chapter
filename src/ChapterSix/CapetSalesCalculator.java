@@ -7,8 +7,8 @@ package ChapterSix;
 
 public class CapetSalesCalculator {
     public static void main(String[] args) {
-        System.out.println("5 10 15 20 25");
-        System.out.println("/n/n");
+        System.out.print("  5 10 15 20 25");
+        System.out.println("\n\n");
         for(int length = 5; length < 25; length++){
             for(int width = 11; width < 20; width++){
                 int price = length * width * 19;
