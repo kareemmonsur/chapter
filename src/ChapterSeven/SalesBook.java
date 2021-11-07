@@ -18,10 +18,22 @@ public class SalesBook {
     }
 
     public void processSales() {
-        outputSales();
+       // outputSales();
         System.out.println(getMinimum());
         System.out.println(getMaximum());
         System.out.println(getAverage());
+    }
+
+//    private void outputSales() {
+//        System.out.println("price are: ");
+//        for(int customer = 0; customer<= prices.length; customer++)
+
+    private double getAverage() {
+        int sum = 0;
+        for (double price : prices) {
+            sum += price;
+        }
+        return sum/ prices.length;
     }
 
     public double getMinimum() {
