@@ -7,7 +7,7 @@ package ChapterSix;
 
 public class CapetSalesCalculator {
     public static void main(String[] args) {
-        System.out.print("  5 10 15 20 25");
+        System.out.print("  5  10  15  20  25");
         System.out.print("\n\n");
         for(int length = 5; length < 25; length++){
             for(int width = 11; width < 20; width++){
