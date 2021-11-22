@@ -33,7 +33,7 @@ public class SalesBook {
         for (double price : prices) {
             sum += price;
         }
-        return sum/ prices.length;
+        return sum / prices.length;
     }
 
     public double getMinimum() {
