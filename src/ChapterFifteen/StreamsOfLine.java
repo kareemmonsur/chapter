@@ -14,9 +14,8 @@ public class StreamsOfLine {
 // Regex that matches one or more consecutive whitespace characters
         Pattern pattern = Pattern.compile("\\s+");
 // count occurrences of each word in a Stream<String> sorted by word
-        Map<String, Long> wordCounts =
-                Files.lines(Paths.get("Chapter2Paragraph.txt"))
-                        .map(line -> line.replaceAll("(?!')\\p{P}", ""))
+        Map<String, Long> wordCounts = Files.lines(Paths.get("Chapter2Paragraph.txt"))
+                       // .map(line -> line.replaceAll("(?!')\\p{P}", ""))
                         .flatMap(line -> pattern.splitAsStream(line))
                         .collect(Collectors.groupingBy(String::toLowerCase,
                                 TreeMap::new, Collectors.counting()));
@@ -26,8 +25,7 @@ public class StreamsOfLine {
                 .collect(
                         Collectors.groupingBy(entry -> entry.getKey().charAt(0),
                                 TreeMap::new, Collectors.toList()))
-                .forEach((letter, wordList) ->
-                {
+                .forEach((letter, wordList) -> {
                     System.out.printf("%n%C%n", letter);
                     wordList.stream().forEach(word -> System.out.printf(
                             "%13s: %d%n", word.getKey(), word.getValue()));
