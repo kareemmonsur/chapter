@@ -38,21 +38,3 @@ public class ArrayAndStreams {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
