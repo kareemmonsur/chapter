@@ -3,8 +3,7 @@ package ChapterFifteen;
 import java.util.stream.IntStream;
 
 public class IntStreamOperations {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         int[] values = {3, 10, 6, 1, 4, 8, 2, 5, 9, 7};
 // display original values
         System.out.print("Original values: ");
@@ -48,7 +47,7 @@ public class IntStreamOperations {
                 .sorted()
                 .forEach(value -> System.out.printf("%d ", value));
         System.out.println();
-// sum range of integers from 1 to 10, exlusive
+// sum range of integers from 1 to 10, exclusive
         System.out.printf("%nSum of integers from 1 to 9: %d%n",
                 IntStream.range(1, 10).sum() );
 // sum range of integers from 1 to 10, inclusive
