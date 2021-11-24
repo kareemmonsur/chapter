@@ -3,8 +3,10 @@ package ChapterFifteen;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 public class ProcessingEmployee {
     public static void main(String[] args) {
@@ -69,5 +71,25 @@ public class ProcessingEmployee {
                 .sorted(lastThenFirst)
                 .map(Employee::getName)
                 .forEach(System.out::println);
+        // group Employees by department
+        System.out.printf("%nEmployees by department:%n");
+        Map<String, List<Employee>> groupedByDepartment =
+                list.stream()
+                        .collect(Collectors.groupingBy(Employee::getDepartment));
+        groupedByDepartment.forEach(
+                (department, employeesInDepartment) ->
+                {
+                    System.out.println(department);
+                    employeesInDepartment.forEach(
+                            employee -> System.out.printf("%s%n", employee));
+                }
+        );
+        // count number of Employees in each department
+        System.out.printf("%nCount of Employees by department:%n");
+        Map<String, Long> employeeCountByDepartment = list.stream()
+                        .collect(Collectors.groupingBy(Employee::getDepartment,
+                                Collectors.counting()));
+        employeeCountByDepartment.forEach(
+                (department, count) -> System.out.printf("%s has %d employee(s)%n", department, count));
     }
 }
